@@ -23,8 +23,8 @@ require('lazy').setup({
   --    require('Comment').setup({})
 
   -- "gc" to comment visual regions/lines
-  { 'numToStr/Comment.nvim', opts = {} },
-
+    { 'numToStr/Comment.nvim', opts = {} },
+  
   -- modular approach: using `require 'path/name'` will
   -- include a plugin definition from file lua/path/name.lua
 
@@ -48,6 +48,7 @@ require('lazy').setup({
 
   require 'kickstart/plugins/treesitter',
 
+
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
   -- put them in the right spots if you want.
@@ -64,8 +65,15 @@ require('lazy').setup({
   --    This is the easiest way to modularize your config.
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
-  --    For additional information, see `:help lazy.nvim-lazy.nvim-structuring-your-plugins`
-  -- { import = 'custom.plugins' },
+    --    For additional information, see `:help lazy.nvim-lazy.nvim-structuring-your-plugins`
+
+
+    require 'custom.plugins.dev-icons',
+    
+    require 'custom.plugins.nvim-tree',
+
+    require 'custom.plugins.barbar',
+
 }, {
   ui = {
     -- If you have a Nerd Font, set icons to an empty table which will use the
