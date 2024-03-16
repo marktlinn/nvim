@@ -97,9 +97,14 @@ vim.keymap.set(
   { desc = 'Close all but current/pinned' }
 )
 
--- Generic niceties
+-- Terminal
+vim.keymap.set('n', '<leader>t', ':ToggleTerm<CR>', { desc = 'Toggle Terminal' })
+
+-- Generic niceties --
 
 -- Quick Save
-vim.keymap.set({ 'i', 'x', 'n', 's' }, '<C-s>', '<cmd>w<cr><esc>', { desc = 'Save file' })
+vim.keymap.set({ 'i', 'x', 'n', 's' }, '<c-s>', '<cmd>w<cr><esc>', { desc = 'Save file' })
 
+-- Quick Quit
+vim.keymap.set({ 'n' }, '<leader>qq', ':q!<CR>', { desc = 'Quit vim' })
 -- vim: ts=2 sts=2 sw=2 et
