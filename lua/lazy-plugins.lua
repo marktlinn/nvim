@@ -73,6 +73,8 @@ require('lazy').setup({
   require 'custom.plugins.barbar',
 
   require 'custom.plugins.toggle-term',
+
+  require 'custom.plugins.none-ls',
 }, {
   ui = {
     -- If you have a Nerd Font, set icons to an empty table which will use the

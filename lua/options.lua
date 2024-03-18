@@ -5,11 +5,12 @@
 
 -- Make line numbers default
 vim.opt.number = true
--- Make line numbers relative
+
+-- Add relative line number for current line.
 vim.opt.relativenumber = true
--- You can also add relative line numbers, for help with jumping.
---  Experiment for yourself to see if you like it!
--- vim.opt.relativenumber = true
+
+-- Set tab length to two spaces.
+vim.opt.tabstop = 4
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
