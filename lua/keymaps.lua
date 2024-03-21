@@ -74,7 +74,7 @@ vim.keymap.set('n', '<leader>n', ':NvimTreeToggle<CR>', { desc = 'Toggle Nvim Tr
 -- Bufferline maps
 
 -- Move to previous/next
-vim.keymap.set('n', '<leader>bv', ':BufferPrevious<CR>', { desc = 'Next buffer' })
+vim.keymap.set('n', '<leader>bn', ':BufferPrevious<CR>', { desc = 'Next buffer' })
 vim.keymap.set('n', '<leader>bb', ':BufferNext<CR>', { desc = 'Prev buffer' })
 
 -- Goto buffer in position...

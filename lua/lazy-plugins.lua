@@ -75,6 +75,15 @@ require('lazy').setup({
   require 'custom.plugins.toggle-term',
 
   require 'custom.plugins.none-ls',
+<<<<<<< HEAD
+=======
+
+  require 'custom.plugins.catppuccin',
+
+  require 'custom.plugins.venv-selector',
+
+  require 'custom.plugins.fugitive',
+>>>>>>> 5f6a4d1 (add: git fugitive & venv plugins)
 }, {
   ui = {
     -- If you have a Nerd Font, set icons to an empty table which will use the
