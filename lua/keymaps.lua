@@ -100,6 +100,27 @@ vim.keymap.set(
 -- Terminal
 vim.keymap.set('n', '<leader>t', ':ToggleTerm<CR>', { desc = 'Toggle Terminal' })
 
+-- LazyGit
+vim.keymap.set('n', '<leader>gt', ':LazyGit<CR>', { desc = 'LazyGit' })
+vim.keymap.set(
+  'n',
+  '<leader>gfa',
+  ':LazyGitFilter<CR>',
+  { desc = 'Git filter all files' }
+)
+vim.keymap.set(
+  'n',
+  '<leader>gc',
+  ':LazyGitCurrentFile<CR>',
+  { desc = 'LazyGit current file' }
+)
+vim.keymap.set(
+  'n',
+  '<leader>gfc',
+  ':LazyGitFilterCurrentFile<CR>',
+  { desc = 'Git filter current file' }
+)
+
 -- Generic niceties --
 
 -- Quick Save
