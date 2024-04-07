@@ -83,6 +83,10 @@ require('lazy').setup({
   require 'custom.plugins.fugitive',
 
   require 'custom.plugins.dashboard',
+
+  require 'custom.plugins.vim-navigator',
+
+  require 'custom.plugins.autopairs',
 }, {
   ui = {
     -- If you have a Nerd Font, set icons to an empty table which will use the

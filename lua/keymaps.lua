@@ -74,8 +74,8 @@ vim.keymap.set('n', '<leader>n', ':NvimTreeToggle<CR>', { desc = 'Toggle Nvim Tr
 -- Bufferline maps
 
 -- Move to previous/next
-vim.keymap.set('n', '<leader>bn', ':BufferPrevious<CR>', { desc = 'Next buffer' })
-vim.keymap.set('n', '<leader>bb', ':BufferNext<CR>', { desc = 'Prev buffer' })
+vim.keymap.set('n', '<leader>bb', ':BufferPrevious<CR>', { desc = 'Next buffer' })
+vim.keymap.set('n', '<leader>bn', ':BufferNext<CR>', { desc = 'Prev buffer' })
 
 -- Goto buffer in position...
 vim.keymap.set('n', '<leader>b1', ':BufferGoto 1<CR>', { desc = 'Goto buffer 1' })
@@ -120,6 +120,12 @@ vim.keymap.set(
   ':LazyGitFilterCurrentFile<CR>',
   { desc = 'Git filter current file' }
 )
+
+-- Tmux Naivgator keymaps
+-- vim.keymap.set('n', '<c-h>', '<cmd><C-U>TmuxNavigateLeft<cr>', {})
+-- vim.keymap.set('n', '<c-j>', '<cmd><C-U>TmuxNavigateDown<cr>', {})
+-- vim.keymap.set('n', '<c-k>', '<cmd><C-U>TmuxNavigateUp<cr>', {})
+-- vim.keymap.set('n', '<c-l>', '<cmd><C-U>TmuxNavigateRight<cr>', {})
 
 -- Generic niceties --
 

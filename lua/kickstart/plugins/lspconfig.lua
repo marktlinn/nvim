@@ -7,9 +7,9 @@ return {
       'williamboman/mason-lspconfig.nvim',
       'WhoIsSethDaniel/mason-tool-installer.nvim',
 
-        -- Useful status updates for LSP.
-        -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
-        { 'j-hui/fidget.nvim', opts = {} },
+      -- Useful status updates for LSP.
+      -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
+      { 'j-hui/fidget.nvim', opts = {} },
 
       -- `neodev` configures Lua LSP for your Neovim config, runtime and plugins
       -- used for completion, annotations and signatures of Neovim apis
@@ -174,10 +174,16 @@ return {
         dockerls = {},
         docker_compose_language_service = {},
         -- Golang
-        gopls = {},
+        gopls = {
+          settings = {
+            gofumpt = true,
+          },
+        },
         goimports = {},
-        gofumpt = {},
+        golangci_lint_ls = {},
+        -- gofumpt = {},
         golines = {},
+
         -- js
         tsserver = {},
         volar = {},
