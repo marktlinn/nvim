@@ -56,7 +56,7 @@ require('lazy').setup({
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   --
   -- require 'kickstart.plugins.debug',
-  -- require 'kickstart.plugins.indent_line',
+  require 'kickstart.plugins.indent_line',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
@@ -87,6 +87,7 @@ require('lazy').setup({
   require 'custom.plugins.vim-navigator',
 
   require 'custom.plugins.autopairs',
+
 }, {
   ui = {
     -- If you have a Nerd Font, set icons to an empty table which will use the

@@ -7,6 +7,7 @@ return {
         'bash',
         'c',
         'html',
+        'css',
         'lua',
         'markdown',
         'vim',

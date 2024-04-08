@@ -185,8 +185,24 @@ return {
         golines = {},
 
         -- js
-        tsserver = {},
-        volar = {},
+        tsserver = {
+          init_options = {
+            plugins = {
+              {
+                name = '@vue/typescript-plugin',
+                location = '/path/to/@vue/language-server',
+                languages = { 'vue' },
+              },
+            },
+          },
+        },
+        volar = {
+          init_options = {
+            vue = {
+              hybridMode = false,
+              },
+          },
+        },
         --
         html = {},
         helm_ls = {},
