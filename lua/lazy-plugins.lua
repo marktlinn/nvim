@@ -88,6 +88,7 @@ require('lazy').setup({
 
   require 'custom.plugins.autopairs',
 
+  require 'custom.plugins.lsp_signature',
 }, {
   ui = {
     -- If you have a Nerd Font, set icons to an empty table which will use the
