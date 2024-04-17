@@ -73,6 +73,20 @@ vim.keymap.set('n', '<leader>n', ':NvimTreeToggle<CR>', { desc = 'Toggle Nvim Tr
 
 -- Bufferline maps
 
+-- toggle line number relative/absolute
+vim.keymap.set(
+  'n',
+  '<leader>lr',
+  ':set relativenumber<CR>',
+  { desc = 'Toggle to relative line numbers' }
+)
+vim.keymap.set(
+  'n',
+  '<leader>ll',
+  ':set norelativenumber<CR>',
+  { desc = 'Toggle to absolute line numbers' }
+)
+
 -- Move to previous/next
 vim.keymap.set('n', '<leader>bb', ':BufferPrevious<CR>', { desc = 'Next buffer' })
 vim.keymap.set('n', '<leader>bn', ':BufferNext<CR>', { desc = 'Prev buffer' })
