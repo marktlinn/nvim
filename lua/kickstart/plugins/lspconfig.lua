@@ -162,7 +162,12 @@ return {
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
         autotools_ls = {},
-        clangd = {},
+        clangd = {
+          cmd = {
+            'clangd',
+            '--offset-encoding=utf-16',
+          },
+        },
         -- Python
         pyright = {},
         black = {},
@@ -200,7 +205,7 @@ return {
           init_options = {
             vue = {
               hybridMode = false,
-              },
+            },
           },
         },
         --
