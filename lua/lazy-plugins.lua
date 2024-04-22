@@ -70,8 +70,6 @@ require('lazy').setup({
 
   require 'custom.plugins.barbar',
 
-  require 'custom.plugins.toggle-term',
-
   require 'custom.plugins.none-ls',
 
   require 'custom.plugins.catppuccin',
