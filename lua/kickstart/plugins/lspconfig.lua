@@ -171,7 +171,7 @@ return {
         -- Python
         pyright = {},
         black = {},
-        isort = {},
+        mypy = {},
 
         rust_analyzer = {},
         bashls = {},
@@ -186,7 +186,6 @@ return {
         },
         goimports = {},
         golangci_lint_ls = {},
-        -- gofumpt = {},
         golines = {},
 
         -- js

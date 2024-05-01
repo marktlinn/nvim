@@ -111,9 +111,6 @@ vim.keymap.set(
   { desc = 'Close all but current/pinned' }
 )
 
--- Terminal
-vim.keymap.set('n', '<leader>t', ':ToggleTerm<CR>', { desc = 'Toggle Terminal' })
-
 -- LazyGit
 vim.keymap.set('n', '<leader>gt', ':LazyGit<CR>', { desc = 'LazyGit' })
 vim.keymap.set(
@@ -149,7 +146,7 @@ vim.keymap.set({ 'i', 'x', 'n', 's' }, '<c-s>', '<cmd>w<cr><esc>', { desc = 'Sav
 -- Quick Quit
 vim.keymap.set({ 'n' }, '<leader>qq', ':q!<CR>', { desc = 'Quit vim' })
 
--- create new line without leaving normal mode
-vim.keymap.set('n', '<CR>', 'o<Esc>k')
-vim.keymap.set('n', '<S-CR>', 'O<Esc>j')
+-- ENTER for newline
+vim.keymap.set('n', '<CR>', 'a<CR><Esc>')
+-- vim.keymap.set('n', '<S-CR>', 'O<Esc>j')
 -- vim: ts=2 sts=2 sw=2 et
