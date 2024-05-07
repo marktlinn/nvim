@@ -9,8 +9,9 @@ vim.opt.number = true
 -- Add relative line number for current line.
 vim.opt.relativenumber = true
 
--- Set tab length to two spaces.
+-- Set tab length to four spaces.
 vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
