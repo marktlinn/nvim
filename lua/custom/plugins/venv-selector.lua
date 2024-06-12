@@ -5,10 +5,13 @@ return {
     'nvim-telescope/telescope.nvim',
     'mfussenegger/nvim-dap-python',
   },
+  branch = 'regexp',
   opts = {
     -- Your options go here
     name = { 'pyenv', '.pyenv' },
     auto_refresh = false,
+    path = true,
+    parents = 5,
     pyenv_path = '/home/mark/.pyenv/versions',
   },
   event = 'VeryLazy', -- Optional: needed only if you want to type `:VenvSelect` without a keymapping
