@@ -207,15 +207,9 @@ return {
             },
           },
         },
-        --
-        html = {},
-        helm_ls = {},
-        jsonls = {},
-        sqlls = {},
-        marksman = {},
-        yamlls = {},
-        checkmake = {},
-        -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
+        eslint = {},
+
+        -- lua
         lua_ls = {
           -- cmd = {...},
           -- filetypes { ...},
@@ -230,6 +224,16 @@ return {
             },
           },
         },
+
+        -- Other
+        html = {},
+        helm_ls = {},
+        jsonls = {},
+        sqlls = {},
+        marksman = {},
+        yamlls = {},
+        checkmake = {},
+        -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
       }
 
       -- Ensure the servers and tools above are installed

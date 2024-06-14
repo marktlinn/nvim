@@ -147,6 +147,6 @@ vim.keymap.set({ 'i', 'x', 'n', 's' }, '<c-s>', '<cmd>w<cr><esc>', { desc = 'Sav
 vim.keymap.set({ 'n' }, '<leader>qq', ':q!<CR>', { desc = 'Quit vim' })
 
 -- ENTER for newline
-vim.keymap.set('n', '<CR>', 'a<CR><Esc>')
+vim.keymap.set('n', '<CR>', 'i<CR><Esc>')
 -- vim.keymap.set('n', '<S-CR>', 'O<Esc>j')
 -- vim: ts=2 sts=2 sw=2 et
