@@ -5,9 +5,10 @@ return {
     'nvim-telescope/telescope.nvim',
     'mfussenegger/nvim-dap-python',
   },
-  branch = 'regexp',
+  -- branch = 'regexp',
   opts = {
     -- Your options go here
+    stay_on_this_version = true,
     name = { 'pyenv', '.pyenv' },
     auto_refresh = false,
     path = true,

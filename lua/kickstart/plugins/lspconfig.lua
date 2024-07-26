@@ -189,6 +189,7 @@ return {
         golines = {},
 
         -- js
+        prettier = {},
         tsserver = {
           init_options = {
             plugins = {
