@@ -86,6 +86,8 @@ require('lazy').setup({
 
   require 'custom.plugins.autopairs',
 
+  require 'custom.plugins.autoclose',
+
   require 'custom.plugins.lsp_signature',
 }, {
   ui = {

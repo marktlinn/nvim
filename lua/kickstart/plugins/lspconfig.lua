@@ -195,7 +195,7 @@ return {
             plugins = {
               {
                 name = '@vue/typescript-plugin',
-                location = '/path/to/@vue/language-server',
+                location = '/path/to/@vue/language-server', -- not set due to quasar issues
                 languages = { 'vue' },
               },
             },
