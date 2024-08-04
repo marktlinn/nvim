@@ -61,8 +61,8 @@ return {
         },
         pickers = {
           find_files = {
-            hidden = true,
-            find_command = {'rg', '--files', '--sortr=modified'}
+            hidden = false,
+            find_command = { 'rg', '--files', '--sortr=modified' },
           },
         },
         extensions = {

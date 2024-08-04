@@ -5,6 +5,19 @@ return {
   },
   config = function()
     local null_ls = require 'null-ls'
+    local root_has_file = function(files)
+      return function(utils)
+        return utils.root_has_file(files)
+      end
+    end
+
+    local prettier_root_files = { '.prettierrc', '.prettierrc.js', '.prettierrc.json' }
+
+    local opts = {
+      prettier_formatting = {
+        condition = root_has_file(prettier_root_files),
+      },
+    }
 
     null_ls.setup {
       sources = {
@@ -15,8 +28,7 @@ return {
         null_ls.builtins.formatting.golines,
 
         -- js/ts
-        null_ls.builtins.formatting.prettier,
-
+        null_ls.builtins.formatting.prettier.with(opts.prettier_formatting),
         -- makefile
         null_ls.builtins.diagnostics.checkmake,
 
