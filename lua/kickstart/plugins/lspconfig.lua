@@ -170,7 +170,6 @@ return {
         },
         rust_analyzer = {},
         bashls = {},
-        cssls = {},
         dockerls = {},
         docker_compose_language_service = {},
         -- Golang
@@ -223,6 +222,8 @@ return {
         impl = {},
         gomodifytags = {},
         gofumpt = {},
+        templ = {},
+        vim.filetype.add { extension = { templ = 'templ' } },
 
         -- js
         tsserver = {
@@ -261,9 +262,11 @@ return {
         },
 
         -- Other
-        terraformls = {},
+        cssls = {},
         html = {},
+        htmx = {},
         helm_ls = {},
+        terraformls = {},
         jsonls = {},
         sqlls = {},
         marksman = {},
