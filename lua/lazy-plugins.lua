@@ -72,7 +72,8 @@ require('lazy').setup({
 
   require 'custom.plugins.barbar',
 
-  require 'custom.plugins.catppuccin',
+  -- require 'custom.plugins.catppuccin',
+  require 'kickstart.plugins.tokyonight',
 
   require 'custom.plugins.venv-selector',
 
